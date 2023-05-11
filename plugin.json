@@ -1,0 +1,12 @@
+{
+    "ID": "7CCD5CC94597483EBC3F179A69511D5C",
+    "ActionKeyword": "au",
+    "Name": "AudFlow",
+    "Description": "Text to speech Plugin",
+    "Author": "Ahmed ElSaeed",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/asmpro7/AudFlow",
+    "IcoPath": "Images\\app.png",
+    "ExecuteFileName": "main.py"
+}
