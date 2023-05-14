@@ -10,8 +10,7 @@ sys.path.append(os.path.join(parent_folder_path, 'plugin'))
 from flowlauncher import FlowLauncher
 from gtts import gTTS
 import os
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
-import pygame
+from playsound import playsound
 
 
 class AudFlow(FlowLauncher):
@@ -33,21 +32,18 @@ class AudFlow(FlowLauncher):
 
                         myobj = gTTS(text=query, lang=lang, slow=False)
                         myobj.save("AudFlow.mp3")
-                        pygame.init()
-                        pygame.mixer.music.load("AudFlow.mp3")
+                        
                         output.append({"Title": "Playing...","IcoPath": "Images/play.png"})
-                        pygame.mixer.music.play()
+                        playsound("AudFlow.mp3")
 
-                        while pygame.mixer.music.get_busy():
-                            pygame.time.Clock().tick(10)
-                        else:
-                            output.clear()
-                            output.append({
-                                "Title": "End",
-                                "IcoPath": "Images/stop.png"})
+                        
+                        output.clear()
+                        output.append({
+                            "Title": "End",
+                            "IcoPath": "Images/stop.png"})
                             
                         
-                        pygame.quit()
+                        
                       else:
                             output.append({
                             "Title": "Typing...",
@@ -63,21 +59,17 @@ class AudFlow(FlowLauncher):
 
                                     myobj = gTTS(text=query, lang=lang, slow=False)
                                     myobj.save("AudFlow.mp3")
-                                    pygame.init()
-                                    pygame.mixer.music.load("AudFlow.mp3")
-                                    
-                                    pygame.mixer.music.play()
+
                                     
 
-                                    while pygame.mixer.music.get_busy():
-                                        
-                                        pygame.time.Clock().tick(10)
-                                    else:
-                                        output.clear()
-                                        output.append({
-                                        "Title": "End",
-                                        "IcoPath": "Images/stop.png"})
-                                    pygame.quit()
+                                    output.append({"Title": "Playing...","IcoPath": "Images/play.png"})
+                                    playsound("AudFlow.mp3")
+                                    
+                                    output.clear()
+                                    output.append({
+                                    "Title": "End",
+                                    "IcoPath": "Images/stop.png"})
+                                    
                     
                     elif query[-1] !="|":
                         output.append({
