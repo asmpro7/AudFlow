@@ -86,8 +86,6 @@ class AudFlow(FlowLauncher):
                         "Title": ":en text to speech |",
                         "SubTitle": "use: 'au :ar expresion |' to speak in arabic, after typing add '|' to run ",
                         "IcoPath": "Images/app.png"})
-        except pygame.error:
-             pass
         except :
             output.append({
                         "Title": "Check your connection",
