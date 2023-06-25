@@ -1,0 +1,8 @@
+body:
+  - type: input
+    attributes:
+      name: execute_key
+      label: "Execute Key:"
+      defaultValue: "|"
+      description:  Characters to indicate end of Text you want
+
