@@ -28,3 +28,8 @@
 </p>
 <p align="center"><img src="https://github.com/asmpro7/AudFlow/assets/114514662/6146bf6e-f358-461b-9120-05af308f51d5" alt="features"></p>
 
+
+## Add new feature in v2.1.0
+the ability to customize the execute key (thanks to [@Garulf](https://github.com/Garulf) )
+![image](https://github.com/asmpro7/AudFlow/assets/114514662/13044af1-ce58-4df5-92b4-c898481f2a49)
+
