@@ -84,7 +84,7 @@ class AudFlow(FlowLauncher):
 
         except ValueError:
             output.append(
-                {"Title": "enter a valid language", "IcoPath": "Images/error.png"}
+                {"Title": "Enter a valid language", "IcoPath": "Images/error.png"}
             )
 
         except IndexError:
@@ -94,6 +94,10 @@ class AudFlow(FlowLauncher):
                     "SubTitle": f"use: 'au :ar expression {key}' to speak in arabic, after typing add '{key}' to run ",
                     "IcoPath": "Images/app.png",
                 }
+            )
+        except AssertionError:
+            output.append(
+                {"Title": "Enter a valid text", "IcoPath": "Images/error.png"}
             )
         except:
             output.append(
