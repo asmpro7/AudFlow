@@ -27,8 +27,8 @@ class AudFlow(FlowLauncher):
             if len(query.strip()) == 0:
                     
                     output.append({
-                        "Title": ":en text to speech |",
-                        "SubTitle": "use: 'au :ar expresion |' to speak in arabic, after typing add '|' to run ",
+                        "Title": f":en text to speech {key}",
+                        "SubTitle": f"use: 'au :ar expresion {key}' to speak in arabic, after typing add '{key}' to run ",
                         "IcoPath": "Images/app.png"})
             else:
                  if len(query) > 3 and ":" in query[0]:                
