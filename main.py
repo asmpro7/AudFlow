@@ -32,7 +32,7 @@ class AudFlow(FlowLauncher):
                 output.append(
                     {
                         "Title": f":en text to speech {key}",
-                        "SubTitle": f"use: 'au :ar expresion {key}' to speak in arabic, after typing add '{key}' to run ",
+                        "SubTitle": f"use: 'au :ar expression {key}' to speak in arabic, after typing add '{key}' to run ",
                         "IcoPath": "Images/app.png",
                     }
                 )
@@ -91,7 +91,7 @@ class AudFlow(FlowLauncher):
             output.append(
                 {
                     "Title": ":en text to speech |",
-                    "SubTitle": "use: 'au :ar expresion |' to speak in arabic, after typing add '|' to run ",
+                    "SubTitle": "use: 'au :ar expression |' to speak in arabic, after typing add '|' to run ",
                     "IcoPath": "Images/app.png",
                 }
             )
