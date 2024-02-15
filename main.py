@@ -90,8 +90,8 @@ class AudFlow(FlowLauncher):
         except IndexError:
             output.append(
                 {
-                    "Title": ":en text to speech |",
-                    "SubTitle": "use: 'au :ar expression |' to speak in arabic, after typing add '|' to run ",
+                    "Title": f":en text to speech {key}",
+                    "SubTitle": f"use: 'au :ar expression {key}' to speak in arabic, after typing add '{key}' to run ",
                     "IcoPath": "Images/app.png",
                 }
             )
