@@ -24,7 +24,7 @@ class AudFlow(FlowLauncher):
         if os.path.exists(flow_settings_dir):
             with open(flow_settings_dir, "r") as f:
                 settings = json.load(f)
-        key = settings["execute_key"]
+        key = settings["execute_key"] if settings["execute_key"] else "|"
         output = []
         try:
             if len(query.strip()) == 0:
